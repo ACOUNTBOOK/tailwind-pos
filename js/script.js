@@ -106,7 +106,7 @@ function initApp() {
       }
       this.updateChange();
     },
-    addCash(amount) {      
+    addCash(amount) {
       this.cash = (this.cash || 0) + amount;
       this.updateChange();
       this.beep();
@@ -140,7 +140,7 @@ function initApp() {
       this.isShowModalReceipt = false;
     },
     dateFormat(date) {
-      const formatter = new Intl.DateTimeFormat('id', { dateStyle: 'short', timeStyle: 'short'});
+      const formatter = new Intl.DateTimeFormat('id', { dateStyle: 'short', timeStyle: 'short' });
       return formatter.format(date);
     },
     numberFormat(number) {
@@ -170,7 +170,7 @@ function initApp() {
       const sound = new Audio();
       sound.src = src;
       sound.play();
-      sound.onended = () => delete(sound);
+      sound.onended = () => delete (sound);
     },
     printAndProceed() {
       const receiptContent = document.getElementById('receipt-content');
